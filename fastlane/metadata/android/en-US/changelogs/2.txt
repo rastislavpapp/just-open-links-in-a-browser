@@ -1,0 +1,4 @@
+First release.
+
+Set the app as your default browser, then open it once to choose which
+installed browser your links should be sent to.
