@@ -1,0 +1,24 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      # Also verifies gradle-wrapper.jar against Gradle's published checksums,
+      # which setup-gradle has done on every run since v4.
+      - uses: gradle/actions/setup-gradle@v6
+
+      - run: ./gradlew assembleDebug test

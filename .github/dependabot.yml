@@ -1,0 +1,14 @@
+version: 2
+
+updates:
+  # AndroidX and anything else in the dependencies block.
+  - package-ecosystem: gradle
+    directory: "/"
+    schedule:
+      interval: weekly
+
+  # The actions used by the workflow above.
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
