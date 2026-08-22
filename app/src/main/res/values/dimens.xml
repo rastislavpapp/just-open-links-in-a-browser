@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Applied in code on top of the window insets, not in the layout. -->
+    <dimen name="screen_margin">16dp</dimen>
+</resources>

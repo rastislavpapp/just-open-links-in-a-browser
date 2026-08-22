@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">just open links in a browser</string>
+    <string name="pick_heading">Send links to</string>
+    <string name="set_default">Set as default browser</string>
+    <string name="is_default">This app is your default browser. Links will be passed on to your chosen browser below.</string>
+    <string name="not_default">This app is not your default browser yet, so it will not see any links.</string>
+    <string name="set_default_legacy">Open a link, pick this app, then tap Always.</string>
+    <string name="no_browsers">No browser found on this device.</string>
+</resources>
