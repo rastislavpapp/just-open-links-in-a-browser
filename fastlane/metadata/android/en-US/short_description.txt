@@ -1,0 +1,1 @@
+Sends links to your real browser instead of an app's built-in one

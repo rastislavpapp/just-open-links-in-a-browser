@@ -47,6 +47,11 @@ android {
         release {
             signingConfig = signingConfigs.findByName("release")
 
+            // AGP stamps the current git commit into the APK by default. F-Droid
+            // builds from a shallow checkout of the release tag, so that stamp
+            // would differ from ours and the build would not be reproducible.
+            vcsInfo { include = false }
+
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(
