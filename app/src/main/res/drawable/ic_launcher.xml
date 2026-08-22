@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-    Flat fallback icon for API 21-25, which predate adaptive icons. Same glyph
+    Flat fallback icon for API 23-25, which predate adaptive icons. Same glyph
     as the adaptive foreground, drawn on its own rounded background.
 -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
@@ -8,16 +8,60 @@
     android:height="48dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
+
     <path
         android:fillColor="#1B6EF3"
         android:pathData="M24,6L84,6A18,18 0 0 1 102,24L102,84A18,18 0 0 1 84,102L24,102A18,18 0 0 1 6,84L6,24A18,18 0 0 1 24,6z" />
+
+    <!--
+        Browser window with a link arriving in it: the window's left edge is
+        open where the arrow comes through. Drawn on a 24x24 grid as 2-unit
+        strokes, then scaled and centred in the 108x108 adaptive viewport.
+    -->
     <group
-        android:translateX="30"
-        android:translateY="30"
-        android:scaleX="2"
-        android:scaleY="2">
+        android:translateX="26.8"
+        android:translateY="28.2"
+        android:scaleX="2.15"
+        android:scaleY="2.15">
+
+        <!-- Window frame, broken on the left where the arrow enters. -->
+        <path
+            android:fillColor="#00000000"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:pathData="M5,9 L5,6 A3,3 0 0 1 8,3 L19,3 A3,3 0 0 1 22,6 L22,18 A3,3 0 0 1 19,21 L8,21 A3,3 0 0 1 5,18" />
+
+        <!-- Chrome bar and its two buttons, which make the frame read as a browser. -->
+        <path
+            android:fillColor="#00000000"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"
+            android:pathData="M5,9 L22,9" />
         <path
             android:fillColor="#FFFFFF"
-            android:pathData="M19,19H5V5h7V3H5c-1.11,0 -2,0.9 -2,2v14c0,1.1 0.89,2 2,2h14c1.1,0 2,-0.9 2,-2v-7h-2v7zM14,3v2h3.59l-9.83,9.83 1.41,1.41L19,6.41V10h2V3h-7z" />
+            android:pathData="M7.6,6 A0.9,0.9 0 1 1 9.4,6 A0.9,0.9 0 1 1 7.6,6 Z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M10.6,6 A0.9,0.9 0 1 1 12.4,6 A0.9,0.9 0 1 1 10.6,6 Z" />
+
+        <!-- The link, entering through the gap. -->
+        <path
+            android:fillColor="#00000000"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"
+            android:pathData="M1,15 L16,15" />
+        <path
+            android:fillColor="#00000000"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:pathData="M13,12 L16,15 L13,18" />
+
     </group>
+
 </vector>
